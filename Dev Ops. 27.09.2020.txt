@@ -1,0 +1,267 @@
+mkdir repository
+cd repository
+git config --global user.name "Asif"
+git config --global user.email "Asif@gmail.com"
+git config -l
+git init
+vi a.txt
+ls
+git status
+git add a.txt
+git commit -m "Added first file"
+git branch
+git status
+git log
+git branch change2
+git branch
+git checkout change2
+git branch
+vi a.txt
+git add a.txt
+git commit -m "Change is done"
+git checkout master
+git merge change2
+vi b.txt
+git add b.txt
+git commit -m "Added a new file"
+git log
+git rm b.txt
+git commit -m "Deleted the b.txt file"
+
+
+
+git clone <link of https>
+cd <directory that got newly created>
+create multiple file such as a.txt, C_Program.c, HelloJava.java etc
+
+git add *
+git commit -m "Multiple files are added"
+git push origin master
+
+
+
+
+
+
+
+   13  pwd
+   14  mkdir repository
+   15  ls
+   16  cd repository/
+   17  pwd
+   18  clear
+   19  git config --global user.name "Asif"
+   20  git config --global user.name "Asif""
+   21  git config --global user.name "Asif@gmail.com"
+   22  clear
+   23  git config 
+   24  clear
+   25  git config --get-all
+   26  clear
+   27  git config -l
+   28  git config --global user.name "Asif"
+   29  git config --global user.email "Asif@gmail.com"
+   30  git config -l
+   31  git init
+   32  clear
+   33  vi a.txt
+   34  ls
+   35  git status
+   36  git add a.txt
+   37  git status
+   38  git commit -m "Initial file creation by Asif"
+   39  clear
+   40  git status
+   41  git branch
+   42  git log
+   43  clear
+   44  vi a.txt 
+   45  git status
+   46  git add a.txt
+   47  git status
+   48  git commit -m "Change#1 is done"
+   49  clear
+   50  git log
+   51  git branch change2
+   52  git branch
+   53  git checkout change2
+   54  git branch
+   55  history
+   56  clear
+   57  git branch
+   58  git log
+   59  vi a.txt 
+   60  git add a.txtx
+   61  git add a.txt
+   62  git commit -m "Change#2 is done"
+   63  git status
+   64  clear
+   65  git log
+   66  git checkout master
+   67  git log
+   68  clear
+   69  git branch
+   70  git merge change2 
+   71  git log 
+   72  git diff
+   73  clear
+   74  vi a.txt
+   75  git diff
+   76  git log
+   77  git diff 64686d283baf4adc15133ea05f5eeca4897d8def 7e60d9f18ffcccb1c873030d3645c57b7c912115
+   78  git diff
+   79  git add a.txt
+   80  vi b.txt
+   81  git add b.txt 
+   82  git status
+   83  git commit -m "Added and modified files"
+   84  git log
+   85  log
+   86  git diff 7e60d9f18ffcccb1c873030d3645c57b7c912115 6a075c7f91014d081986915bdf038d1782a5cf1c
+   87  git diff 
+   88  git diff master change2
+   89  ls
+   90  git log
+   91  git checkout 6a075c7f91014d081986915bdf038d1782a5cf1c
+   92  clear
+   93  ls
+   94  git status
+   95  git log
+   96  clear
+   97  git checkout change2
+   98  ls
+   99  git checkout master
+  100  git status
+  101  ls
+  102  git rm b.txt
+  103  git status
+  104  git commit -m "Deleted b.txt"
+  105  git status
+  106  ls
+  107  clear
+  108  git log
+  109  clear
+  110  git checkout 6a075c7f91014d081986915bdf038d1782a5cf1c
+  111  ls
+  112  git branch
+  113  clear
+  114  cd
+  115  git clone https://github.com/aiqbal84/github_practice.git
+  116  ls
+  117  cd github_practice/
+  118  git status
+  119  vi a.txt
+  120  vi C_Program.c
+  121  vi Hello_world.java
+  122  vi HelloJava.java
+  123  clear
+  124  ls
+  125  git status
+  126  git add *
+  127  git status
+  128  clear
+  129  git commit -m "Initial addition of multiple files"
+  130  git status
+  131  git push origin master
+  132  vi a.txt
+  133  git status
+  134  git add a.txt
+  135  clear
+  136  git commit -m "Added a second chnage in txt file"
+  137  git status
+  138  git push origin master
+  139  cd ..
+  140  rm -r github_practice/
+  141  ls -lrt
+  142  clear
+  143  git clone https://github.com/aiqbal84/github_practice.git
+  144  cd github_practice/
+  145  git pull
+  146  cat C_Program.c 
+  147  git pull
+  148  cat C_Program.c 
+  149  git log
+  150  clear
+  151  git log
+  152  clear
+  153  cat a.txt 
+  154  git pull
+  155  cat a.txt 
+  156  git log
+  157  clear
+  158  cat C_Program.c 
+  159  git branch change
+  160  git checkout change
+  161  git branch
+  162  ls
+  163  git rm HelloJava.java 
+  164  git commit -m "Removed the java file"
+  165  git status
+  166  git checkout master
+  167  clear
+  168  ls
+  169  git checkout change 
+  170  ls
+  171  vi a.pdf
+  172  rm a.pdf 
+  173  history
+
+*****************************************************************************
+Vitual Machine
+https://julietasitolemc.centralus.cloudapp.azure.com:42001/guacamole/#/client/REVGQVVMVABjAGRlZmF1bHQ=?username=guacadmin&password=guacadmin
+
+Jenkins intalation
+rm -rf /var/lib/dpkg/lock-frontend
+
+sudo su - (para ir ao root)
+
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+echo "deb https://pkg.jenkins.io/debian-stable binary/" > /etc/apt/sources.list.d/jenkins.list
+apt-get update
+apt install openjdk-8-jdk
+apt-get install jenkins
+
+Dominio: julietasitolemc.centralus.cloudapp.azure.com:8080
+
+cat /var/lib/jenkins/secrets/initialAdminPassword
+
+
+service jenkins status -to view the status of jenkins
+
+
+INSTALATIONOF ANSIBLE CONFIGURATION MANAGEMENT TOOL
+
+ apt-get install software-properties-common
+
+ apt-add-repository ppa:ansible/ansible
+
+ apt-get update
+
+ apt-get install ansible
+modify the file relaated to asinble vi /etc/ansible
+
+MANAGING HOSTS
+asnible -m ping webservers
+asnible -m ping dbservers
+ansible -m ping green.example.com
+ansible -m ping green.example.co
+
+SSH
+ssh-keygen -t rsa
+cd /root/.ssh
+cat id_rsa.pub >> authorized_keyssudo su -
+
+ansible-playbook git.yaml
+
+ansible-playbook playbook.yaml -vv
+
+https://github.com/anujdevopslearn/InterviewQuestions/blob/master/InstallationGuides/Ansible.txt
+
+https://github.com/anujdevopslearn/InterviewQuestions/blob/master/DevOps_Das.docx
+
+
+
+
+
+
+
